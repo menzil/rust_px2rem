@@ -3,6 +3,16 @@ use std::error::Error;
 use std::fs::{self, OpenOptions};
 use std::io::{self, prelude::*};
 
+/// Convert css px to rem
+/// 
+/// #Example
+/// ```
+/// cargo run -- 100.00 test.sass
+/// 
+/// ```
+/// default replace original file
+
+
 pub fn run(config: Config) -> Result<(), Box<dyn Error>> {
     let contents = fs::read_to_string(&config.filename)?;
     px2rem(config.ratio,&config.filename, &contents);
