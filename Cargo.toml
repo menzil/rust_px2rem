@@ -1,6 +1,7 @@
 [package]
 name = "px2rem"
 authors=["Ruzaji Yasin <menzil@live.cn>"]
+description = "Convert css px to rem"
 version = "0.1.0"
 edition = "2021"
 
