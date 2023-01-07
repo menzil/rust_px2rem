@@ -5,7 +5,6 @@ use std::io::{self, prelude::*};
 
 /// Convert css px to rem
 /// 
-/// #Example
 /// ```
 /// cargo run -- 100.00 test.sass
 /// 
